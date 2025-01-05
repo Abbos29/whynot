@@ -1,0 +1,13 @@
+:root {
+    --brand-color: #0100a6;
+    --background: #ffffff;
+    --text: #111111;
+    --item-bg: #f7f7f7;
+}
+
+.dark-theme {
+    --background: #111111;
+    --text: #ffffff;
+    --item-bg: #ffffff1a;
+}
+
