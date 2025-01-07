@@ -29,6 +29,16 @@ const Header = () => {
     return (
         <header className={s.header}>
             <div className="container">
+                <div className={s.top}>
+
+                    <a className={s.mobile_logo} href="">
+                        <img src="/header-logo.svg" alt="logo" />
+                    </a>
+
+                    <div className={s.bell}>
+                        <img src="/icon-bell.svg" alt="icon-bell" />
+                    </div>
+                </div>
                 <nav className={s.nav}>
                     <div className={s.drops}>
                         <div>
@@ -36,7 +46,7 @@ const Header = () => {
                                 <button className={s.dropdownButton} onClick={toggleLanguageDropdown}>
                                     <img src="/icon-globus.svg" alt="language" className={s.icon} />
                                     {language}
-                                    <img src="/icon-arrow.svg" alt="arrow-icon" />
+                                    <img className={s.arrow} src="/icon-arrow.svg" alt="arrow-icon" />
                                 </button>
                                 {languageOpen && (
                                     <ul className={s.dropdownMenu}>
@@ -51,7 +61,7 @@ const Header = () => {
                             <div className={s.dropdown}>
                                 <button className={s.dropdownButton} onClick={toggleCurrencyDropdown}>
                                     {currency}
-                                    <img src="/icon-arrow.svg" alt="arrow-icon" />
+                                    <img className={s.arrow} src="/icon-arrow.svg" alt="arrow-icon" />
                                 </button>
                                 {currencyOpen && (
                                     <ul className={s.dropdownMenu}>
@@ -69,15 +79,43 @@ const Header = () => {
                     </div>
 
                     <div className={s.inner}>
-                        <div className={s.item}>
-                            <img src="/icon-search.svg" alt="search" />
-                        </div>
-                        <div className={s.item}>
-                            <img src="/icon-login.svg" alt="login" />
-                        </div>
-                        <div className={s.item}>
-                            <img src="/icon-cart.svg" alt="cart" />
-                        </div>
+
+
+                        <a href="">
+                            <div className={`${s.item} ${s.active}`}>
+                                <img src="/icon-home.svg" alt="search" />
+                                <span>Главная</span>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div className={s.item}>
+                                <img src="/icon-search.svg" alt="search" />
+                                <span>Поиск</span>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div className={s.item}>
+                                <img src="/icon-brands.svg" alt="search" />
+                                <span>Бренды</span>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div className={s.item}>
+                                <img src="/icon-login.svg" alt="login" />
+                                <span>Логин</span>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div className={s.item}>
+                                <img src="/icon-cart.svg" alt="cart" />
+                                <span>Корзина</span>
+                            </div>
+                        </a>
+
                     </div>
 
                 </nav>
