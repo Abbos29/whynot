@@ -1,4 +1,5 @@
 import Footer from '@/components/layout/Footer/Footer';
+import MobileApp from '@/components/layout/MobileApp/MobileApp';
 import LoaderBlank from '@/components/ui/LoaderBlank/LoaderBlank';
 import ThemeToggle from '@/components/ui/ThemeToggle/ThemeToggle';
 import Head from 'next/head';
@@ -12,6 +13,7 @@ const index = () => {
       </Head>
       {/* <LoaderBlank /> */}
       <ThemeToggle />
+      <MobileApp />
       <Footer />
     </>
   );
