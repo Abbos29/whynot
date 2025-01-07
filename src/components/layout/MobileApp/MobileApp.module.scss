@@ -1,0 +1,52 @@
+.mobile_app {
+  background-color: #07071b;
+}
+
+.mobile_app_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem) 0;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+  }
+  .mobile_app_content {
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+    h1 {
+      color: #fff;
+      font-weight: 600;
+      font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+      padding-bottom: 12px;
+    }
+    p {
+      color: #e1e5e1;
+      font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+      font-weight: 400;
+    }
+  }
+  .mobile_app_downloads {
+    padding-top: clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem);
+    display: flex;
+    gap: 12px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+    span {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .mobile_app_qr {
+      width: 72px;
+      border: 1px solid #ffffff33;
+      padding: 9px;
+      border-radius: 8px;
+    }
+  }
+  .mobile_app_image img {
+    width: 100%;
+  }
+}
