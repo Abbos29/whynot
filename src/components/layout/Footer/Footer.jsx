@@ -114,7 +114,7 @@ const Footer = () => {
           <div className={s.footer_end_wrap}>
             <div className='container'>
               <div className={s.footer_end}>
-                <p>© 2023 “WHY NOT Sneakers Store”. Все права защищены. </p>
+                <p>© 2025 “WHY NOT Sneakers Store”. Все права защищены. </p>
                 <span>
                   Developed by: <Link href={'/'}>WHY NOT - DEVELOPERS</Link>
                 </span>
