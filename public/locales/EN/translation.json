@@ -1,0 +1,9 @@
+{
+  "header": {
+    "main": "Main",
+    "search": "Search",
+    "brands": "Brands",
+    "login": "Login",
+    "cart": "Cart"
+  }
+}
