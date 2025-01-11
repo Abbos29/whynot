@@ -9,6 +9,10 @@
   transition: background-color 0.3s, color 0.3s !important;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background);
