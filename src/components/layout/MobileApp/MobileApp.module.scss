@@ -1,5 +1,10 @@
 .mobile_app {
+  width: 100%;
+  background: url('../../../../public/why-not-bg.svg') no-repeat center
+    center/cover;
+  background-size: clamp(25rem, 15.909rem + 45.45vw, 50rem);
   background-color: #07071b;
+  padding: 30px 0;
 }
 
 .mobile_app_wrap {
@@ -9,7 +14,7 @@
   padding: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem) 0;
   @media (max-width: 700px) {
     flex-direction: column;
-    gap: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+    gap: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem);
   }
   .mobile_app_content {
     @media (max-width: 700px) {
